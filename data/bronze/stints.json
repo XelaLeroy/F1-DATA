@@ -1,0 +1,248 @@
+[
+	{
+		"Driver": "ALB",
+		"Stint": 1.0,
+		"Compound": "HARD",
+		"StintLength": 1
+	},
+	{
+		"Driver": "ALO",
+		"Stint": 1.0,
+		"Compound": "HARD",
+		"StintLength": 31
+	},
+	{
+		"Driver": "ALO",
+		"Stint": 2.0,
+		"Compound": "MEDIUM",
+		"StintLength": 1
+	},
+	{
+		"Driver": "ANT",
+		"Stint": 1.0,
+		"Compound": "MEDIUM",
+		"StintLength": 10
+	},
+	{
+		"Driver": "ANT",
+		"Stint": 2.0,
+		"Compound": "HARD",
+		"StintLength": 46
+	},
+	{
+		"Driver": "BEA",
+		"Stint": 1.0,
+		"Compound": "MEDIUM",
+		"StintLength": 10
+	},
+	{
+		"Driver": "BEA",
+		"Stint": 2.0,
+		"Compound": "HARD",
+		"StintLength": 46
+	},
+	{
+		"Driver": "BOR",
+		"Stint": 1.0,
+		"Compound": "HARD",
+		"StintLength": 1
+	},
+	{
+		"Driver": "BOT",
+		"Stint": 1.0,
+		"Compound": "MEDIUM",
+		"StintLength": 10
+	},
+	{
+		"Driver": "BOT",
+		"Stint": 2.0,
+		"Compound": "HARD",
+		"StintLength": 45
+	},
+	{
+		"Driver": "COL",
+		"Stint": 1.0,
+		"Compound": "HARD",
+		"StintLength": 32
+	},
+	{
+		"Driver": "COL",
+		"Stint": 2.0,
+		"Compound": "MEDIUM",
+		"StintLength": 23
+	},
+	{
+		"Driver": "GAS",
+		"Stint": 1.0,
+		"Compound": "MEDIUM",
+		"StintLength": 10
+	},
+	{
+		"Driver": "GAS",
+		"Stint": 2.0,
+		"Compound": "HARD",
+		"StintLength": 46
+	},
+	{
+		"Driver": "HAD",
+		"Stint": 1.0,
+		"Compound": "SOFT",
+		"StintLength": 1
+	},
+	{
+		"Driver": "HAD",
+		"Stint": 2.0,
+		"Compound": "HARD",
+		"StintLength": 9
+	},
+	{
+		"Driver": "HAD",
+		"Stint": 3.0,
+		"Compound": "HARD",
+		"StintLength": 46
+	},
+	{
+		"Driver": "HAM",
+		"Stint": 1.0,
+		"Compound": "MEDIUM",
+		"StintLength": 10
+	},
+	{
+		"Driver": "HAM",
+		"Stint": 2.0,
+		"Compound": "HARD",
+		"StintLength": 46
+	},
+	{
+		"Driver": "HUL",
+		"Stint": 1.0,
+		"Compound": "HARD",
+		"StintLength": 35
+	},
+	{
+		"Driver": "HUL",
+		"Stint": 2.0,
+		"Compound": "MEDIUM",
+		"StintLength": 20
+	},
+	{
+		"Driver": "LAW",
+		"Stint": 1.0,
+		"Compound": "MEDIUM",
+		"StintLength": 9
+	},
+	{
+		"Driver": "LAW",
+		"Stint": 2.0,
+		"Compound": "HARD",
+		"StintLength": 47
+	},
+	{
+		"Driver": "LEC",
+		"Stint": 1.0,
+		"Compound": "MEDIUM",
+		"StintLength": 10
+	},
+	{
+		"Driver": "LEC",
+		"Stint": 2.0,
+		"Compound": "HARD",
+		"StintLength": 46
+	},
+	{
+		"Driver": "LIN",
+		"Stint": 1.0,
+		"Compound": "HARD",
+		"StintLength": 42
+	},
+	{
+		"Driver": "LIN",
+		"Stint": 2.0,
+		"Compound": "MEDIUM",
+		"StintLength": 13
+	},
+	{
+		"Driver": "NOR",
+		"Stint": 1.0,
+		"Compound": "HARD",
+		"StintLength": 1
+	},
+	{
+		"Driver": "OCO",
+		"Stint": 1.0,
+		"Compound": "HARD",
+		"StintLength": 29
+	},
+	{
+		"Driver": "OCO",
+		"Stint": 2.0,
+		"Compound": "MEDIUM",
+		"StintLength": 17
+	},
+	{
+		"Driver": "OCO",
+		"Stint": 3.0,
+		"Compound": "SOFT",
+		"StintLength": 9
+	},
+	{
+		"Driver": "PER",
+		"Stint": 1.0,
+		"Compound": "MEDIUM",
+		"StintLength": 11
+	},
+	{
+		"Driver": "PER",
+		"Stint": 2.0,
+		"Compound": "HARD",
+		"StintLength": 44
+	},
+	{
+		"Driver": "PIA",
+		"Stint": 1.0,
+		"Compound": "MEDIUM",
+		"StintLength": 1
+	},
+	{
+		"Driver": "RUS",
+		"Stint": 1.0,
+		"Compound": "MEDIUM",
+		"StintLength": 10
+	},
+	{
+		"Driver": "RUS",
+		"Stint": 2.0,
+		"Compound": "HARD",
+		"StintLength": 46
+	},
+	{
+		"Driver": "SAI",
+		"Stint": 1.0,
+		"Compound": "MEDIUM",
+		"StintLength": 9
+	},
+	{
+		"Driver": "SAI",
+		"Stint": 2.0,
+		"Compound": "HARD",
+		"StintLength": 46
+	},
+	{
+		"Driver": "STR",
+		"Stint": 1.0,
+		"Compound": "HARD",
+		"StintLength": 10
+	},
+	{
+		"Driver": "VER",
+		"Stint": 1.0,
+		"Compound": "SOFT",
+		"StintLength": 9
+	},
+	{
+		"Driver": "VER",
+		"Stint": 2.0,
+		"Compound": "HARD",
+		"StintLength": 36
+	}
+]
