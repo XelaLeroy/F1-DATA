@@ -1,7 +1,21 @@
 import fastf1
 import pandas as pd
 import json
+import os
+import duckdb
 from fastf1.ergast import Ergast
+
+
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
+python_dir = os.path.dirname(base_dir)
+print(python_dir)
+root_dir = os.path.dirname(python_dir)
+print(root_dir)
+cache_path = os.path.join(python_dir, 'f1_cache')
+bronze_data_path = os.path.join(root_dir, 'data', 'bronze')
+
+fastf1.Cache.enable_cache(cache_path)
 
 ergast = Ergast()
 
@@ -13,7 +27,7 @@ circuits = ergast.get_circuits(season=2022, result_type='raw')
 
 df_temp_circuits = pd.DataFrame(circuits)
 df_temp_circuits.to_json(
-	"data/bronze/circuits.json",
+	os.path.join(bronze_data_path, 'circuits.json'),
 	orient="records",
     date_format="iso",
     indent=4
@@ -28,7 +42,7 @@ gp2 = ergast.get_race_results(2026, 1, result_type='raw')
 
 df_temp= pd.DataFrame(gp2)
 df_temp.to_json(
-    "data/bronze/results.json",
+    	os.path.join(bronze_data_path, 'results.json'),
     orient="records",
     date_format="iso",
     indent=4
@@ -40,18 +54,29 @@ df_temp.to_json(
 session = fastf1.get_session(2026, 2, 'R')
 session.load()
 
-# 2. Choisir un pilote (ex: Leclerc 'LEC')
+# 2. Choisir un pilote (ex: Leclerc 'LEC') and his rival (Antonelli)
 fastest_lap = session.laps.pick_drivers('LEC')
+fastest_lap_antonelli = session.laps.pick_drivers('ANT')
 
 # 3. Récupérer la télémétrie de ce tour précis
 # La méthode 'get_telemetry()' renvoie l'objet dont parle ta doc
-telemetry = fastest_lap.get_telemetry()
+telemetry_lec = fastest_lap.get_telemetry()
+telemetry_ant = fastest_lap_antonelli.get_telemetry()
+
 
 # 4. Nettoyage rapide pour ton Bronze/Silver
 # On convertit les Timedelta en secondes (flottants) car le JSON déteste les Timedelta
-telemetry['Time'] = telemetry['Time'].dt.total_seconds()
-telemetry.to_json(
-    "data/bronze/leclerc_telemetry.json",
+telemetry_lec['Time'] = telemetry_lec['Time'].dt.total_seconds()
+telemetry_lec.to_json(
+	os.path.join(bronze_data_path, 'leclerc_telemetry.json'),
+    orient="records",
+    date_format="iso",
+    indent=4
+)
+
+telemetry_ant['Time'] = telemetry_ant['Time'].dt.total_seconds()
+telemetry_ant.to_json(
+	os.path.join(bronze_data_path, 'antonelli_telemetry.json'),
     orient="records",
     date_format="iso",
     indent=4
@@ -72,7 +97,7 @@ stints = stints.count().reset_index()
 stints = stints.rename(columns={"LapNumber": "StintLength"})
 
 stints.to_json(
-	"data/bronze/stints.json",
+	os.path.join(bronze_data_path, 'stints.json'),
 	orient="records"
 )
 
