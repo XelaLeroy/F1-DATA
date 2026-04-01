@@ -1,0 +1,6 @@
+services:
+  f1-pipeline:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./f1_cache:/app/f1_cache
