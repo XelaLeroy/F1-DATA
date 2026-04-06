@@ -1,0 +1,14 @@
+{
+  "sqltools.useNodeRuntime": true,
+  "sqltools.connections": [
+    {
+      "previewLimit": 10,
+      "driver": "DuckDB",
+      "database": "/home/alexandre/Projects/Perso/Data_Engineer/F1/data/silver/f1_projects.db",
+      "name": "f1_data"
+    }
+  ],
+  "workbench.editorAssociations": {
+  "*.db": "default"
+}
+}
