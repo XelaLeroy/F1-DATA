@@ -1,6 +1,9 @@
 services:
   f1-pipeline:
     build: .
+    image : f1-image
+    container_name: f1-pipeline
     volumes:
       - ./data:/app/data
       - ./f1_cache:/app/f1_cache
+    env_file: .env
